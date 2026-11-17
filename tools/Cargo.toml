@@ -1,0 +1,13 @@
+[package]
+name = "chima-textures"
+version = "1.0.0"
+edition = "2021"
+description = "Unpacks LEGO Legends of Chima (PS Vita) and writes its textures as Vita3K replacement PNGs"
+license = "MIT"
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+png = "0.17"
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
